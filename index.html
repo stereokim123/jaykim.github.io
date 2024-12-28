@@ -1,157 +1,339 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+  <title>Introduction</title>
 
-        h1 {
-            font-size: 36px;
-            margin: 0;
-        }
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        h2 {
-            font-size: 30px;
-            margin: 0;
-        }
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-        h3 {
-            font-size: 20px;
-            margin: 0;
-        }
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-        main {
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 800px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* 동그라미 메뉴 스타일 */
-        .circle-menu {
-            display: flex;
-            justify-content: center;
-            /* 가운데 정렬 */
-            margin: 30px 0;
-            gap: 20px;
-            /* 버튼 사이 간격 */
-        }
-
-        .circle-menu a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .circle-menu a:hover {
-            background-color: #555;
-            transform: scale(1.1);
-        }
-
-        /* Media query for small devices */
-        @media only screen and (max-width: 600px) {
-            header {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            main {
-                margin: 10px;
-                padding: 10px;
-            }
-
-            p {
-                font-size: 16px;
-                line-height: 1.3;
-            }
-
-            /* 동그라미 버튼 사이즈 축소 */
-            .circle-menu a {
-                width: 50px;
-                height: 50px;
-                font-size: 12px;
-            }
-        }
-    </style>
 </head>
 
-<body>
-    <header>
-        <h1>About Me</h1>
-    </header>
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Hong Bo Young</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">I am</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">저는 이런 사람입니다</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Information</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#modified">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">My Spec</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">잘 부탁 드립니다!</a>
+      </li>
+    </ul>
+  </nav>
 
-    <main>
-        <div style="display: flex; align-items: center;">
-            <div style="flex-shrink: 0; margin-right: 20px;">
-                <img src="./img/profile.jpg" alt="Profile picture" height="200px" width="200px">
-            </div>
-            <div>
-                <!-- 소개 멘트/자기소개 -->
-                <h1>여기에다가 소개 멘트</h1>
-                <p>자기소개해</p>
-                <hr>
-                <p>Find more about me in</p>
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1 fix-font">I am</h1>
+      <h3 class="mb-5 fix-font">
+        <em>제 이름은 홍보영입니다</em>
+      </h3>
+      <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+    </div>
+    <div class="overlay"></div>
+  </header>
 
-                <!-- 소셜 링크 등 -->
-                <div class="center">
-                    페이스북, 링크드인, 인스타, 블로그 등 링크 걸기.
-                </div>
-            </div>
+  <!-- About -->
+  <section class="content-section fix-bg-black" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="fix-font fix-font-white">저는 이런 사람입니다</h1>
+          <p class="lead mb-5 fix-font fix-font-white">안녕하세요, BackEnd 개발자 홍보영입니다.
+            <a class="js-scroll-trigger" href="#portfolio">꾸준하게 성장하는</a> 개발자가 되는게 꿈입니다!
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Education, Portfolio, Skills, Contact를 동그라미 버튼으로 배치 -->
-        <div class="circle-menu">
-            <a href="./education.html">Edu</a>
-            <a href="./portfolio.html">Port</a>
-            <a href="./skills.html">Skills</a>
-            <a href="./contact.html">Contact</a>
+  <!-- Services -->
+  <section class="fix-font content-section fix-bg-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Abuot me</h3>
+        <h2 class="mb-5">Information</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Profile</strong>
+          </h4>
+          <hr>
+          <p>이름 : 홍보영</p>
+          <p>성별 : 여</p>
+          <p>생년월일 : 2001.09.03(23세)</p>
+          <p>전화번호 : 010-4161-6588</p>
+          <p>이메일 : boyoung@naver.com</p>
+          <p class="text-faded mb-0">Looks great on any screen size!</p>
         </div>
-    </main>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Career</strong>
+          </h4>
+          <hr>
+          <p>2007-xx초등학교 졸업</p>
+          <p>2010-삼각산중학교 졸업</p>
+          <p>2019-서울외국어고등학교 졸업</p>
+          <p>2020-동국대학교 멀티미디어공학과 입학</p>
+          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Interesting</strong>
+          </h4>
+          <hr>
+          <p>취미 : 음악 듣기기</p>
+          <p>좋아하는 것 : 강아지</p>
+          <p>싫어하는 것 : 예시</p>
+          <p>장점 : 꾸준함</p>
+          <p>단점 : 소심함함</p>
+          <p class="text-faded mb-0">Millions of users
+            <i class="fa fa-heart"></i>
+            Start Bootstrap!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Skill</strong>
+          </h4>
+          <hr>
+          <p>Java</p>
+          <p>NySQL, SpringBoot</p>
+          <p>REST API AWS EC2 AWS RDS Deep Learning Docker Flask Jenkins Apache Kafka Machine Learning OpenCV
+            Python PyTorch React Native Redis Tensorflow flutter JIRA Spring Cloud Next.js GitHub Actions FastAPI</p>
+          <p class="text-faded mb-0">I mustache you a question...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-section fix-bg-white text-center" id="services">
+    <div>
+    </div>
+  </section>
+
+  <!-- modified1 -->
+  <section class="fix-font fix-bg-black fix-font-white" id="modified">
+    <section class="fix-section">
+      <div class="container content-section-heading text-center">
+        <h2 class="">수상/자격증</h2>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-5">
+              <h4>2024-08 산학연계 교육과정 영상콘텐츠 공모전 최우수상</h4>
+              <p>산학연계 교육과정 영상콘텐츠 공모전 - 2024 CD 59초 영화제 최우수상 수상</p>
+              <h4>2024-08 SKT FLY AI 개인부문 우수상</h4>
+              <p>SKT FLY AI 교육 개인부문 패기반 우수상 수상 (우수수료생)</p>
+              <h4>2024-06 SKT기업 연계 교과우수상</h4>
+              <p>기업사회맞춤캡스톤디자인 과목 - SKT 연계</p>
+              <h4>2023-01 SQLD</h4>
+              <h4>2021-07 정보처리기사</h4>
+              <h4>2021-07 컴퓨터활용능력 1급</h4>
+              <h4>2021-07 한국사능력검정시험 1급</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container content-section-heading text-center">
+        <h2 class="">활동</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-5">
+              <h4>2024-06 ~ (교육) SKT FLY AI Challenger 수료</h4>
+              <p>MLOps, 인공지능 교육</p>
+              <h4>2024-04 ~ (대외활동) 하나증권 서포터지 하나드림 수료</h4>
+              <p>아카데미원 수료, 금융권 대외활동으로 금융과 투자에 대한 전반적인 교육</p>
+              <h4>2023-07 ~ (교육) 신한투자증권 프로디지털 아카데미 수료</h4>
+              <p>클라우드 기반 금융 ICT 풀스택 개발자 양성 과정</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container content-section-heading text-center">
+        <h2 class="">외국어</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="p-5">
+              <h4>영어</h4>
+              <p>TOEIC Speaking • IH(140)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section fix-font" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">프로젝트</h3>
+        <h2 class="mb-5">Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="portfolio1.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>PROJECT 1</h2>
+                <h5 class="mb-0">고령운전자의 급발진 사고를 예방하는 안전운전 앱 서비스</h5>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/sc1.jpg" alt="프로젝트 1" style="width: 100%; height: auto; object-fit: cover;">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="portfolio2.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>PROJECT 2</h2>
+                <h5 class="mb-0">나만의 사진과 필터를 전시하는 모바일 전시 앱 서비스</h5>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/sc2.jpg" alt="프로젝트 2" style="width: 100%; height: auto; object-fit: cover;">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="portfolio3.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>PROJECT 3</h2>
+                <h5 class="mb-0">AI를 활용한 역할놀이 육아보조 서비스</h5>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/sc3.jpg" alt="프로젝트 3" style="width: 100%; height: auto; object-fit: cover;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Callout -->
+  <section class="fix-font callout fix-bg-black">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">"잘 부탁드립니다!"</h2>
+      <h4>- 신영증권 신입사원 홍보영 -</h4>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <!-- <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      </div>
+    </section> -->
+
+  <!-- Map -->
+  <!-- <section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      <br/>
+      <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      </small>
+    </section> -->
+
+  <!-- Footer -->
+  <footer class="footer text-center" id="contact">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle fix-font-black mr-3" href="URL">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle fix-font-black mr-3" href="URL">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle fix-font-black" href="https://github.com/BoyoungH">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2024</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
 </body>
 
 </html>
