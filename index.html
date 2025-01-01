@@ -24,20 +24,16 @@
 
   <!-- 반응형 스타일 추가 -->
   <style>
-    /* 헤더 이미지를 반응형으로 맞추기 위해 background-size, position 설정 */
-    .masthead {
-      background-size: cover !important;
-      background-position: center !important;
-    }
+    /* (기존) 헤더 이미지를 배경으로 쓰는 스타일은 제거했습니다.
+       이제는 <img>로 직접 배치하므로 아래 부분은 필요 없습니다.
+       .masthead {
+         background-size: cover !important;
+         background-position: center !important;
+       }
+    */
 
     /* 768px 이하(태블릿·모바일)에서의 스타일 조정 */
     @media (max-width: 768px) {
-
-      /* 헤더 영역 텍스트를 중앙 정렬 */
-      .masthead .container {
-        justify-content: center !important;
-        text-align: center !important;
-      }
 
       /* 아이콘 크기 축소 */
       .service-icon {
@@ -121,21 +117,27 @@
     </ul>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex"
-    style="height: 100vh; position: relative; background: url('img/bg-masthead.jpg') no-repeat center; background-position: 30% center; background-size: auto;">
-    <div class="container text-center my-auto"
-      style="flex: 1; display: flex; align-items: center; justify-content: flex-end;">
-      <div>
-        <h1 class="mb-1 fix-font">안녕하세요</h1>
-        <h3 class="mb-5 fix-font">
-          <em>제 이름은 홍보영입니다</em>
-        </h3>
-        <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+  <!-- Header (이미지+텍스트 레이아웃으로 변경) -->
+  <header class="" style="padding: 60px 0; background-color: #f8f9fa;">
+    <div class="container">
+      <!-- Bootstrap의 row와 col 사용 -->
+      <div class="row align-items-center">
+        <!-- 왼쪽에 이미지 -->
+        <div class="col-md-5 mb-4 mb-md-0 text-center">
+          <img src="img/bg-masthead.jpg" alt="홍보영 이미지" class="img-fluid"
+            style="max-width: 100%; height: auto; border-radius: 5px;">
+        </div>
+        <!-- 오른쪽에 텍스트 -->
+        <div class="col-md-7 text-center text-md-left">
+          <h1 class="mb-1 fix-font">안녕하세요</h1>
+          <h3 class="mb-5 fix-font">
+            <em>제 이름은 홍보영입니다</em>
+          </h3>
+        </div>
       </div>
     </div>
-    <div class="overlay"></div>
   </header>
+  <!-- (기존에 있던 overlay와 height: 100vh, background 관련 스타일은 제거) -->
 
   <!-- About -->
   <section class="content-section fix-bg-black" id="about">
@@ -389,7 +391,9 @@
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2024</p>
+      <p class="text-muted small mb-0">
+        Copyright &copy; Your Website 2024
+      </p>
     </div>
   </footer>
 
